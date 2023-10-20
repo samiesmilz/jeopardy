@@ -1,0 +1,103 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+body {
+  padding-top: 50px;
+  background: linear-gradient(to right, #3336a8, black);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: smaller;
+}
+h1 {
+  font-size: 50px;
+  color: white;
+  text-shadow: darkgoldenrod 1px 1px;
+  text-align: center;
+}
+
+#loading-message {
+  text-align: center;
+  justify-self: center;
+  font-style: italic;
+  color: white;
+  text-shadow: darkgoldenrod 1px 1px;
+  width: 250px;
+  background-color: black;
+  border-radius: 15px;
+  border-style: dotted;
+  padding: 5px;
+}
+
+#restart-game-btn {
+  margin: 25px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  text-shadow: darkgoldenrod 1px 1px;
+  box-shadow: 0 0 10px #0000004d; /* Subtle box shadow */
+  border: 1px dotted darkgoldenrod;
+  align-self: center;
+  justify-self: center;
+}
+
+#restart-game-btn:hover {
+  background-color: darkgoldenrod;
+  border: 1px dotted black;
+  color: white;
+  box-shadow: 0 0 10px #0000004d; /* Subtle box shadow */
+}
+
+#restart-game-btn:disabled {
+  background-color: grey;
+  color: #3336a8;
+  text-shadow: black 1px 1px;
+}
+
+#jeopardy {
+  text-align: center;
+  font-size: 9pt;
+  background-color: #3336a8;
+  color: white;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px #0000004d; /* Subtle box shadow */
+}
+
+#jeopardy th,
+#jeopardy td {
+  border: solid 1px white;
+  width: 12em;
+  padding: 1em;
+}
+
+th {
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  height: 4em;
+  text-shadow: darkgoldenrod 1px 1px;
+}
+
+td {
+  height: 9em;
+  font-family: Copse, serif;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+.revealed {
+  background: radial-gradient(circle, #3336a8, rgba(0, 0, 0, 0.649));
+  color: white; /* You may want to change text color for better visibility */
+}
